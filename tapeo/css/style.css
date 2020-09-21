@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+html , body{
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-family: 'Acme';
+}
+
+
+
+
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+p{
+  font-size: 10px;
+}
+.box{
+  height: 500%;
+}
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+xtra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+na
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+
+
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+img{
+    width: 150px;
+}
+.nav-link{
+    color: green;
+}
+h3 , h2{
+  text-align: center;
+}
+#position{
+  width: 650px;
+}
+hr{
+  border: 1px solid white;
+  border-radius: 5px;
+}
+#rese{
+  background-color: green;
+  color: white;
+}
+h2{
+  color:green;
+}
+#title{
+  color: green;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black
+}
+h4{
+  stroke: white 1px;
+  color: red;
+  -webkit-text-fill-color: red; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black
+}
+p{
+  font-family: 'Acme';
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 24px;
+}
+strong{
+  font-family: 'Acme';
+  margin: 10px;
+}
+#last{
+  border: black solid 5px;
+  border-radius: 50px;
+}
+.foothr{
+  border: 2px solid gray;
+  border-radius: 5px;
+  width: 85%;
+  
+}
+h1,h2,h3,h4,h5{
+  font-family: 'Acme';
+}
+.nav-tabs li{
+  padding-right: 30px;
+}
+.carousel-inner img{
+  width: 100%;
+  height: 100%;
+}
+.btn-primary{
+  background-color: green;
+  border: 2px solid black;
+  border-radius: 10px;
+  
+}
+.btn-primary:hover{
+  background-color: darkgreen;
+  border: 2px solid black;
+}
+#rese:hover{
+  background-color: red;
+}
+.navc:hover{
+  background-color: green;
+  color: black;
+  
+}
+footer{
+  background-color: #3f3f3f;
+  border: black solid 5px;
+  color: #d5d5d5;
+
+}
+#last{
+  background-color: white;
+}
+.card-title , .card-text , .btn-primary{
+  text-align: center;
+  justify-content: center;
+}
+
+#reserv{
+  padding-left: 50px;
+}
+.btn-group{
+  margin: 90px;
+}
+#bg-image{
+  width: 100%;
+}
+iframe{
+  padding-left: 80px;
+}
+.btn-primary a {
+  color: white;
+}
+#price{
+  color: red;
+}
+.dropdown-menu{
+  overflow: auto;
+  width: 300px;
+  height: 500px;
+}
+
+.box{
+  height:00% ;
+}
+#price{
+  float: right;
+}
+.card-title{
+  color: darkgreen;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.scroll{
+  overflow: auto;
+  height: 800px;
+}
+.card-title a { position:relative;
+color: green; }
+.card-title a span { position:absolute; display:none; z-index:99; }
+.card-title a:hover span { 
+  display:block;
+
+}
+
+#imgho{
+  width: 150%;
+  height: 100%;
+}
+.card-title a span :hover{
+  background-color: black;
+}
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%; }
+  .gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease; }
+  .gallery .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+  
+  @media (max-width: 450px) {
+  .gallery {
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+  -webkit-column-width: 100%;
+  -moz-column-width: 100%;
+  column-width: 100%;
+  }
+  }
+  
+  @media (max-width: 400px) {
+  .btn.filter {
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  .alert-warning{
+    margin: 100px;
+  }
