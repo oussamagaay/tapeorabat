@@ -22,10 +22,12 @@ html , body{
 @media (max-width: 768px) {
   
 }
-@media (max-width: 576px) {
-p{
-  font-size: 10px;
-}
+@media screen and (max-width: 600px) {
+    body,html,h5,h4,h3,h2,h1,p {
+      
+      font-size : 12px ;
+    }
+  }
 .box{
   height: 500%;
 }
